@@ -6,8 +6,7 @@ export default defineConfig({
       enabled: true,
       provider: process.env.COVERAGE_PROVIDER,
       reportsDirectory: `coverage-${process.env.COVERAGE_PROVIDER}`,
-      include: ["lib/**", "src/**"],
-      all: false,
+      include: ["lib/**"],
     },
   },
 });
