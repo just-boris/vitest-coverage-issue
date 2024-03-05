@@ -1,0 +1,16 @@
+{
+  "name": "vitest-coverage-issue",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "pretest": "rm -rf dist && tsc",
+    "test": "COVERAGE_PROVIDER=istanbul npm run test:run && COVERAGE_PROVIDER=v8 npm run test:run",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "@vitest/coverage-istanbul": "^1.3.1",
+    "@vitest/coverage-v8": "^1.3.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  }
+}
